@@ -10,6 +10,9 @@ prebuilt_etc {
         android_arm: {
             src: "arm/configs/llndk.libraries.28.txt",
         },
+        android_riscv64: {
+            src: "arm64/configs/llndk.libraries.28.txt",
+        },
         android_x86_64: {
             src: "x86_64/configs/llndk.libraries.28.txt",
         },
@@ -27,6 +30,9 @@ prebuilt_etc {
         },
         android_arm: {
             src: "arm/configs/vndksp.libraries.28.txt",
+        },
+        android_riscv64: {
+            src: "arm64/configs/vndksp.libraries.28.txt",
         },
         android_x86_64: {
             src: "x86_64/configs/vndksp.libraries.28.txt",
