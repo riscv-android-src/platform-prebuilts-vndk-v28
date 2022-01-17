@@ -48,6 +48,9 @@ prebuilt_etc {
         android_arm64: {
             src: "arm64/configs/llndk.libraries.28.txt",
         },
+        android_riscv64: {
+            src: "riscv64/configs/llndk.libraries.28.txt",
+        },
         android_x86: {
             src: "x86/configs/llndk.libraries.28.txt",
         },
@@ -69,6 +72,9 @@ prebuilt_etc {
         android_x86: {
             src: "x86/configs/vndksp.libraries.28.txt",
         },
+        android_riscv64: {
+            src: "riscv64/configs/vndksp.libraries.28.txt",
+        },
         android_x86_64: {
             src: "x86_64/configs/vndksp.libraries.28.txt",
         },
@@ -83,6 +89,9 @@ prebuilt_etc {
         },
         android_arm64: {
             src: "arm64/configs/vndkcore.libraries.28.txt",
+        },
+        android_riscv64: {
+            src: "riscv64/configs/vndkcore.libraries.28.txt",
         },
         android_x86: {
             src: "x86/configs/vndkcore.libraries.28.txt",
@@ -102,6 +111,9 @@ prebuilt_etc {
         android_arm64: {
             src: "arm64/configs/vndkprivate.libraries.28.txt",
         },
+        android_riscv64: {
+            src: "riscv64/configs/vndkprivate.libraries.28.txt",
+        },
         android_x86: {
             src: "x86/configs/vndkprivate.libraries.28.txt",
         },
@@ -119,6 +131,9 @@ prebuilt_etc {
         },
         android_arm64: {
             src: "arm64/configs/vndkproduct.libraries.txt",
+        },
+        android_riscv64: {
+            src: "riscv64/configs/vndkproduct.libraries.txt",
         },
         android_x86: {
             src: "x86/configs/vndkproduct.libraries.txt",
@@ -149,6 +164,9 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: ["arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so"],
+        },
+        android_riscv64: {
+            srcs: ["riscv64/arch-riscv64-riscv64/shared/vndk-core/libprotobuf-cpp-lite.so"],
         },
         android_arm: {
             srcs: ["arm/arch-arm-armv7-a-neon/shared/vndk-core/libprotobuf-cpp-lite.so"],
@@ -184,6 +202,9 @@ cc_prebuilt_library_shared {
         },
         android_arm: {
             srcs: ["arm/arch-arm-armv7-a-neon/shared/vndk-core/libprotobuf-cpp-full.so"],
+        },
+        android_riscv64: {
+            srcs: ["riscv64/arch-riscv64-riscv64/shared/vndk-core/libprotobuf-cpp-full.so"],
         },
         android_x86_64: {
             srcs: ["x86_64/arch-x86_64-x86_64/shared/vndk-core/libprotobuf-cpp-full.so"],
